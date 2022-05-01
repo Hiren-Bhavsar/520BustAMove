@@ -7,6 +7,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import bustamove.appnamehere.R
 
+//Create home fragment view
+
 class HomeFragment : Fragment(){
 
     override fun onCreateView(

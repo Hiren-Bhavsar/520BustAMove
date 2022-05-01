@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import bustamove.appnamehere.R
 
+//Create settings fragment view
+
 class SettingsFragment : Fragment(){
 
     override fun onCreateView(
