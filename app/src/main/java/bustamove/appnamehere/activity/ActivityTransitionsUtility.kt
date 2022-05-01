@@ -94,4 +94,9 @@ object ActivityTransitionsUtility {
             else -> "UNKNOWN"
         }
     }
+
+    //Get permission from user so activity_recognition can be used
+    //Forced android version to stop error. Q = Android 10
+    @RequiresApi(Build.VERSION_CODES.Q)
+    fun hasActivityTransitionPermissions(context: Context): Boolean = EasyPermissions.hasPermissions(context, Manifest.permission.ACTIVITY_RECOGNITION)
 }
