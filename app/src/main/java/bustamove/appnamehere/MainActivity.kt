@@ -1,12 +1,16 @@
 package bustamove.appnamehere
 
+import android.Manifest
 import android.annotation.SuppressLint
 import android.content.SharedPreferences
+import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.preference.PreferenceManager
+import androidx.annotation.RequiresApi
 import androidx.appcompat.widget.Toolbar
 import androidx.viewpager.widget.ViewPager
+import bustamove.appnamehere.activity.Constant
 import bustamove.appnamehere.ui.HomeFragment
 import bustamove.appnamehere.ui.PlaylistFragment
 import bustamove.appnamehere.ui.SettingsFragment
@@ -43,8 +47,21 @@ class MainActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks {
         adapter.addFragment(SettingsFragment(), "Settings")
 
         pager.adapter = adapter
-
         tab.setupWithViewPager(pager)
+
+        getActivityTrackingPermission()
+    }
+
+    // Get Permission
+    //Require Android 10
+    @RequiresApi(Build.VERSION_CODES.Q)
+    private fun getActivityTrackingPermission() {
+        EasyPermissions.requestPermissions(
+            this,
+            "This is a necessary permission requirement",
+            Constant.Constants.REQUEST_CODE_ACTIVITY_TRANSITION,
+            Manifest.permission.ACTIVITY_RECOGNITION
+        )
     }
 
     override fun onPermissionsGranted(requestCode: Int, perms: MutableList<String>) {
