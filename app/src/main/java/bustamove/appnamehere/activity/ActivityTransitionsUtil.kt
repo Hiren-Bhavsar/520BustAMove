@@ -69,6 +69,9 @@ object ActivityTransitionsUtil {
         return transitions
     }
 
+    //Return the transition list inside an Activity Transition Request
+    fun getActivityTransitionRequest() = ActivityTransitionRequest(getTransitions())
+
     fun toActivityString(activity: Int): String {
         return when (activity) {
             DetectedActivity.STILL -> "STILL"
