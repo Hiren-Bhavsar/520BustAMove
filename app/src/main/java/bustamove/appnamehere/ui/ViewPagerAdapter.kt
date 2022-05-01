@@ -5,6 +5,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 
 //Code based on android examples provided by Google
+//https://developer.android.com/reference/com/google/android/material/tabs/TabLayout
 
 class ViewPagerAdapter(supportFragmentManager: FragmentManager) :
     FragmentStatePagerAdapter(supportFragmentManager) {
