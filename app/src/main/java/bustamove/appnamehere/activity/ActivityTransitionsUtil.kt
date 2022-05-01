@@ -69,6 +69,15 @@ object ActivityTransitionsUtil {
         return transitions
     }
 
+    //Specify if the activity is entering or exiting
+    fun toTransitionType(transitionType: Int): String {
+        return when (transitionType) {
+            ActivityTransition.ACTIVITY_TRANSITION_ENTER -> "ENTER"
+            ActivityTransition.ACTIVITY_TRANSITION_EXIT -> "EXIT"
+            else -> "UNKNOWN"
+        }
+    }
+
     //Return the transition list inside an Activity Transition Request
     fun getActivityTransitionRequest() = ActivityTransitionRequest(getTransitions())
 
