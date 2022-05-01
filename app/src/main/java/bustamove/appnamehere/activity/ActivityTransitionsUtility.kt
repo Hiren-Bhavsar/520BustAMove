@@ -15,7 +15,7 @@ import pub.devrel.easypermissions.EasyPermissions
 //Code based on android examples provided by Google
 //https://developer.android.com/guide/topics/location/transitions
 
-object ActivityTransitionsUtil {
+object ActivityTransitionsUtility {
     private fun getTransitions(): MutableList<ActivityTransition> {
 
         // Activity transitions we are tracking
