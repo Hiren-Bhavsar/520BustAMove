@@ -68,4 +68,14 @@ object ActivityTransitionsUtil {
 
         return transitions
     }
+
+    fun toActivityString(activity: Int): String {
+        return when (activity) {
+            DetectedActivity.STILL -> "STILL"
+            DetectedActivity.WALKING -> "WALKING"
+            DetectedActivity.RUNNING -> "RUNNING"
+            DetectedActivity.IN_VEHICLE -> "IN VEHICLE"
+            else -> "UNKNOWN"
+        }
+    }
 }
