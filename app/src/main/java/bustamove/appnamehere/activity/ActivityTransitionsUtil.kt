@@ -12,6 +12,8 @@ import com.google.android.gms.location.DetectedActivity
 
 import pub.devrel.easypermissions.EasyPermissions
 
+//Code based on android examples provided by Google
+
 object ActivityTransitionsUtil {
     private fun getTransitions(): MutableList<ActivityTransition> {
 
