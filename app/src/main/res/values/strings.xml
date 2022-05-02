@@ -20,4 +20,6 @@
     <string name="artist_name">Artist name</string>
     <string name="daft_punk">Daft Punk</string>
     <string name="play_pause_button">Play/Pause Button</string>
+    <string name="go_back_buton">go back buton</string>
+    <string name="skipbutton">skipbutton</string>
 </resources>
