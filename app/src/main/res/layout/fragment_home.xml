@@ -14,7 +14,8 @@
         android:layout_marginTop="120dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/daftpunkart" />
+        app:srcCompat="@drawable/daftpunkart"
+        android:contentDescription="Album Art" />
 
     <TextView
         android:id="@+id/textView2"
@@ -24,8 +25,31 @@
         android:layout_marginTop="73dp"
         android:text="Now Playing:"
         android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="278dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="3dp"
+        android:clickable="true"
+        android:contentDescription="Song name"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text=" Around the World / Harder Better Faster Stronger"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        <requestFocus />
+        </TextView>
 </androidx.constraintlayout.widget.ConstraintLayout>
