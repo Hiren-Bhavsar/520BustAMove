@@ -2,6 +2,8 @@ package bustamove.appnamehere.activity
 
 import android.content.Context
 import android.content.Intent
+import android.widget.Toast
+import bustamove.appnamehere.MainActivity
 import com.google.android.gms.location.ActivityTransitionResult
 
 //Code based on android examples provided by Google
@@ -13,10 +15,12 @@ class ActivityTransitionReceiver {
         if (ActivityTransitionResult.hasResult(intent)) {
             val activityResult = ActivityTransitionResult.extractResult(intent)!!
             activityResult.let {
-                activityResult.transitionEvents.forEach{activityEvent ->
-                    val activityInfo = ActivityTransitionsUtility.toTransitionType(activityEvent.transitionType) + " " + ActivityTransitionsUtility.toActivityString(activityEvent.activityType);
+                activityResult.transitionEvents.forEach { activityEvent ->
+                    val activityInfo = ActivityTransitionsUtility.toTransitionType(activityEvent.transitionType) + " " + ActivityTransitionsUtility.toActivityString(activityEvent.activityType)
+
                 }
             }
         }
     }
+
 }
