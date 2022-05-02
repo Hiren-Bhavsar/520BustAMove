@@ -33,12 +33,12 @@ private lateinit var pager: ViewPager
 private lateinit var tab: TabLayout
 
 @SuppressLint("StaticFieldLeak")
-private lateinit var activityClient: ActivityRecognitionClient
-private lateinit var userPrefs : SharedPreferences
+//private lateinit var activityClient: ActivityRecognitionClient
+//private lateinit var userPrefs : SharedPreferences
 
-private var activityInfo : String = ""
+//private var activityInfo : String = ""
 
-class MainActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks {
+class MainActivity : AppCompatActivity()/*, EasyPermissions.PermissionCallbacks*/ {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,8 +46,8 @@ class MainActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks {
 
         pager = findViewById(R.id.viewPager)
         tab = findViewById(R.id.tabs)
-        activityClient = ActivityRecognition.getClient(this)
-        userPrefs = PreferenceManager.getDefaultSharedPreferences(this)
+//        activityClient = ActivityRecognition.getClient(this)
+//        userPrefs = PreferenceManager.getDefaultSharedPreferences(this)
 
 
 
@@ -60,8 +60,8 @@ class MainActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks {
         pager.adapter = adapter
         tab.setupWithViewPager(pager)
 
-        getActivityTrackingPermission()
-        registerForUpdates()
+//        getActivityTrackingPermission()
+//        registerForUpdates()
     }
 
     private fun showToast(message: String) {
@@ -71,56 +71,45 @@ class MainActivity : AppCompatActivity(), EasyPermissions.PermissionCallbacks {
 
     // Get Permission
     //Require Android 10
-    @RequiresApi(Build.VERSION_CODES.Q)
-    private fun getActivityTrackingPermission() {
-        EasyPermissions.requestPermissions(
-            this,
-            "This is a necessary permission requirement",
-            Constant.Constants.REQUEST_CODE_ACTIVITY_TRANSITION,
-            Manifest.permission.ACTIVITY_RECOGNITION
-        )
-    }
-
-    override fun onPermissionsGranted(requestCode: Int, perms: MutableList<String>) {
-        TODO("Not yet implemented")
-    }
-
-    override fun onPermissionsDenied(requestCode: Int, perms: MutableList<String>) {
-        if (EasyPermissions.somePermissionPermanentlyDenied(this, perms)) {
-            AppSettingsDialog.Builder(this).build().show()
-        } else {
-            getActivityTrackingPermission()
-        }
-    }
+//    @RequiresApi(Build.VERSION_CODES.Q)
+//    private fun getActivityTrackingPermission() {
+//        EasyPermissions.requestPermissions(
+//            this,
+//            "This is a necessary permission requirement",
+//            Constant.Constants.REQUEST_CODE_ACTIVITY_TRANSITION,
+//            Manifest.permission.ACTIVITY_RECOGNITION
+//        )
+//    }
+//
+//    override fun onPermissionsGranted(requestCode: Int, perms: MutableList<String>) {
+//        TODO("Not yet implemented")
+//    }
+//
+//    override fun onPermissionsDenied(requestCode: Int, perms: MutableList<String>) {
+//        if (EasyPermissions.somePermissionPermanentlyDenied(this, perms)) {
+//            AppSettingsDialog.Builder(this).build().show()
+//        } else {
+//            getActivityTrackingPermission()
+//        }
+//    }
 
     //Register for ActivityTransitionUpdates
-    private fun registerForUpdates() {
-        activityClient.requestActivityTransitionUpdates(ActivityTransitionsUtility.getActivityTransitionRequest(), atrPendingEvent())
-    }
+//    private fun registerForUpdates() {
+//        activityClient.requestActivityTransitionUpdates(ActivityTransitionsUtility.getActivityTransitionRequest(), atrPendingEvent())
+//    }
+//
+//    //Unregister for ActivityTransitionUpdates
+//    private fun unregisterForUpdates(){
+//        activityClient.removeActivityTransitionUpdates(atrPendingEvent()).addOnSuccessListener { atrPendingEvent().cancel() }
+//    }
 
-    //Unregister for ActivityTransitionUpdates
-    private fun unregisterForUpdates(){
-        activityClient.removeActivityTransitionUpdates(atrPendingEvent()).addOnSuccessListener { atrPendingEvent().cancel() }
-    }
-
-    private fun atrPendingEvent(): PendingIntent {
-        val intent = Intent(this, this::class.java)
-        return PendingIntent.getBroadcast(
-            this,
-            Constant.Constants.REQUEST_CODE_INTENT_ACTIVITY_TRANSITION,
-            intent,
-            PendingIntent.FLAG_UPDATE_CURRENT
-        )
-    }
-    fun onReceive(context: Context, intent: Intent) {
-        if (ActivityTransitionResult.hasResult(intent)) {
-            val activityResult = ActivityTransitionResult.extractResult(intent)!!
-            activityResult.let {
-                activityResult.transitionEvents.forEach { activityEvent ->
-                    activityInfo = ActivityTransitionsUtility.toTransitionType(activityEvent.transitionType) + " " + ActivityTransitionsUtility.toActivityString(activityEvent.activityType)
-                    showToast(activityInfo)
-                }
-            }
-        }
-    }
+//    private fun atrPendingEvent(): PendingIntent {
+//        val intent = Intent(this, this::class.java)
+//        return PendingIntent.getBroadcast(
+//            this,
+//            Constant.Constants.REQUEST_CODE_INTENT_ACTIVITY_TRANSITION,
+//            intent,
+//            PendingIntent.FLAG_UPDATE_CURRENT
+//        )
+//    }
 }
