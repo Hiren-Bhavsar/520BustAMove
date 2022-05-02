@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/defaults"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"/>
     </LinearLayout>
@@ -64,7 +64,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/walking"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"/>
 
@@ -106,7 +106,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/running"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"/>
 
@@ -138,7 +138,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/bicycle"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"/>
 
@@ -170,7 +170,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/driving"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"/>
 
@@ -202,7 +202,7 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/sitting"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"/>
 
