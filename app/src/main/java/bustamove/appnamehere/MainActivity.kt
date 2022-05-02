@@ -10,6 +10,8 @@ import android.preference.PreferenceManager
 import android.content.Intent
 import android.app.PendingIntent
 import android.content.Context
+import android.widget.Button
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.appcompat.widget.Toolbar
@@ -60,6 +62,10 @@ class MainActivity : AppCompatActivity()/*, EasyPermissions.PermissionCallbacks*
         pager.adapter = adapter
         tab.setupWithViewPager(pager)
 
+        val button: ImageButton = findViewById(R.id.playPause)
+        button.setOnClickListener {
+            
+        }
 //        getActivityTrackingPermission()
 //        registerForUpdates()
     }
