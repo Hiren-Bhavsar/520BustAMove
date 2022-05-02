@@ -9,4 +9,5 @@
     <string name="activity_unknown">Unknown</string>
     <string name="defaults">Defaults</string>
     <string name="running">Running</string>
+    <string name="walking">Walking</string>
 </resources>
