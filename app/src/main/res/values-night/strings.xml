@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="album_art">Album Art</string>
+    <string name="now_playing">Now Playing:</string>
+    <string name="song_name">Song name</string>
+    <string name="around_the_world_harder_better_faster_stronger">Around the World / Harder Better Faster Stronger</string>
+    <string name="artist_name">Artist name</string>
+    <string name="daft_punk">Daft Punk</string>
+</resources>
