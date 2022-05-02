@@ -11,4 +11,5 @@
     <string name="running">Running</string>
     <string name="walking">Walking</string>
     <string name="bicycle">Bicycle</string>
+    <string name="driving">Driving</string>
 </resources>
