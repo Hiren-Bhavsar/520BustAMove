@@ -76,7 +76,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/playPause"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="180dp"
@@ -143,7 +143,7 @@
         android:layout_marginStart="65dp"
         android:layout_marginBottom="27dp"
         android:progressTint="#1B7FD6"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton"
+        app:layout_constraintBottom_toTopOf="@+id/playPause"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
