@@ -6,15 +6,53 @@
     android:layout_height="match_parent"
     android:background="#BABABA" >
 
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="143dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="440dp"
+        android:text="IN VEHICLE"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton11" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="145dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="440dp"
+        android:text="CYCLING"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton11" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="144dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginTop="212dp"
+        android:text="RUNNING"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton11" />
+
     <ImageButton
         android:id="@+id/imageButton10"
         android:layout_width="141dp"
         android:layout_height="138dp"
-        android:layout_marginStart="232dp"
-        android:layout_marginTop="252dp"
+        android:layout_marginTop="275dp"
+        android:layout_marginEnd="30dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="person running"
         android:scaleType="centerCrop"
         android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/running" />
 
@@ -23,19 +61,21 @@
         android:layout_width="141dp"
         android:layout_height="138dp"
         android:layout_marginStart="132dp"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="60dp"
+        android:background="#00FFFFFF"
         android:scaleType="centerCrop"
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/defaults" />
+        app:srcCompat="@drawable/still" />
 
     <ImageButton
         android:id="@+id/imageButton12"
         android:layout_width="141dp"
         android:layout_height="138dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="252dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="275dp"
+        android:background="#00FFFFFF"
         android:scaleType="centerCrop"
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,23 +86,48 @@
         android:id="@+id/imageButton5"
         android:layout_width="141dp"
         android:layout_height="138dp"
-        android:layout_marginStart="232dp"
-        android:layout_marginTop="444dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="30dp"
+        android:background="#00FFFFFF"
         android:scaleType="centerCrop"
         android:visibility="visible"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/driving" />
+        app:srcCompat="@drawable/vehicle" />
 
     <ImageButton
         android:id="@+id/imageButton6"
         android:layout_width="141dp"
         android:layout_height="138dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="444dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="500dp"
+        android:background="#00FFFFFF"
         android:scaleType="centerCrop"
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bicycle" />
+        app:srcCompat="@drawable/cycling" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="146dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="132dp"
+        android:text="STILL"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton11" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="144dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="212dp"
+        android:text="WALKING"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton11" />
 </androidx.constraintlayout.widget.ConstraintLayout>
