@@ -62,10 +62,6 @@ class MainActivity : AppCompatActivity()/*, EasyPermissions.PermissionCallbacks*
         pager.adapter = adapter
         tab.setupWithViewPager(pager)
 
-        val button: ImageButton = findViewById(R.id.playPause)
-        button.setOnClickListener {
-            
-        }
 //        getActivityTrackingPermission()
 //        registerForUpdates()
     }
