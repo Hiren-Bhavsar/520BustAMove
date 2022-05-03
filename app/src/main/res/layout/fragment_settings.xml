@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="18dp"
         android:layout_marginTop="60dp"
-        android:text="Color Options:"
+        android:text="@string/color_options"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#000000"
         android:textStyle="bold"
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="432dp"
-        android:text="Connect to Spotify:"
+        android:text="@string/connect_to_spotify"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#000000"
         android:textStyle="bold"
@@ -45,35 +45,35 @@
             android:id="@+id/radioButton5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Dark Mode"
+            android:text="@string/dark_mode"
             android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/radioButton4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Light Mode"
+            android:text="@string/light_mode"
             android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Red-Green Colorblind"
+            android:text="@string/red_green_colorblind"
             android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Blue-Yellow Colorblind"
+            android:text="@string/blue_yellow_colorblind"
             android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Monochrome"
+            android:text="@string/monochrome"
             android:textSize="20sp" />
     </RadioGroup>
 
@@ -83,6 +83,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="18dp"
         android:layout_marginBottom="176dp"
+        android:contentDescription="@string/spotify_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/spotify" />
@@ -93,7 +94,7 @@
         android:layout_height="35dp"
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="176dp"
-        android:text="Current User: Aman Singh"
+        android:text="@string/current_user_aman_singh"
         android:textAlignment="gravity"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"

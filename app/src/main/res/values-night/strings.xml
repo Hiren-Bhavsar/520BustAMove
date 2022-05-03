@@ -9,4 +9,13 @@
     <string name="play_pause_button">Play/Pause Button</string>
     <string name="go_back_buton">go back buton</string>
     <string name="skipbutton">skipbutton</string>
+    <string name="color_options">Color Options:</string>
+    <string name="connect_to_spotify">Connect to Spotify:</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="light_mode">Light Mode</string>
+    <string name="red_green_colorblind">Red-Green Colorblind</string>
+    <string name="blue_yellow_colorblind">Blue-Yellow Colorblind</string>
+    <string name="monochrome">Monochrome</string>
+    <string name="current_user_aman_singh">Current User: Aman Singh</string>
+    <string name="spotify_logo">spotify logo</string>
 </resources>
