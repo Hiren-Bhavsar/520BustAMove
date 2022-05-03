@@ -8,8 +8,8 @@
     <string name="activity_walking">walking</string>
     <string name="activity_unknown">Unknown</string>
     <string name="defaults">Defaults</string>
-    <string name="running">Running</string>
-    <string name="walking">Walking</string>
+    <string name="running">RUNNING</string>
+    <string name="walking">WALKING</string>
     <string name="bicycle">Bicycle</string>
     <string name="driving">Driving</string>
     <string name="sitting">Sitting</string>
@@ -31,4 +31,12 @@
     <string name="monochrome">Monochrome</string>
     <string name="current_user_aman_singh">Current User: Aman Singh</string>
     <string name="spotify_logo">spotify logo</string>
+    <string name="in_vehicle">IN VEHICLE</string>
+    <string name="cycling">CYCLING</string>
+    <string name="person_running">person running</string>
+    <string name="person_sitting">person sitting</string>
+    <string name="person_walking">person walking</string>
+    <string name="vehicles">vehicles</string>
+    <string name="person_cycling">person cycling</string>
+    <string name="still">STILL</string>
 </resources>
