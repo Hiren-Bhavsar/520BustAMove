@@ -7,7 +7,7 @@
     android:background="#BABABA" >
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/RunningLabel"
         android:layout_width="144dp"
         android:layout_height="29dp"
         android:layout_marginStart="240dp"
@@ -16,10 +16,10 @@
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton11" />
+        app:layout_constraintTop_toBottomOf="@+id/stillButton" />
 
     <ImageButton
-        android:id="@+id/imageButton10"
+        android:id="@+id/runningButton"
         android:layout_width="141dp"
         android:layout_height="138dp"
         android:layout_marginTop="260dp"
@@ -33,7 +33,7 @@
         app:srcCompat="@drawable/running" />
 
     <ImageButton
-        android:id="@+id/imageButton11"
+        android:id="@+id/stillButton"
         android:layout_width="141dp"
         android:layout_height="138dp"
         android:layout_marginStart="132dp"
@@ -47,7 +47,7 @@
         app:srcCompat="@drawable/still" />
 
     <ImageButton
-        android:id="@+id/imageButton12"
+        android:id="@+id/walkingButton"
         android:layout_width="141dp"
         android:layout_height="138dp"
         android:layout_marginStart="30dp"
@@ -61,7 +61,7 @@
         app:srcCompat="@drawable/walking" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/inVehicleButton"
         android:layout_width="141dp"
         android:layout_height="138dp"
         android:layout_marginTop="480dp"
@@ -75,7 +75,7 @@
         app:srcCompat="@drawable/vehicle" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/vehicleLabel"
         android:layout_width="143dp"
         android:layout_height="32dp"
         android:layout_marginTop="420dp"
@@ -84,10 +84,10 @@
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton11" />
+        app:layout_constraintTop_toBottomOf="@+id/stillButton" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/cyclingLabel"
         android:layout_width="145dp"
         android:layout_height="28dp"
         android:layout_marginStart="30dp"
@@ -96,10 +96,10 @@
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton11" />
+        app:layout_constraintTop_toBottomOf="@+id/stillButton" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/cyclingButton"
         android:layout_width="141dp"
         android:layout_height="138dp"
         android:layout_marginStart="30dp"
@@ -113,7 +113,7 @@
         app:srcCompat="@drawable/cycling" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/stillLabel"
         android:layout_width="146dp"
         android:layout_height="28dp"
         android:layout_marginStart="132dp"
@@ -121,10 +121,10 @@
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton11" />
+        app:layout_constraintTop_toBottomOf="@+id/stillButton" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/walkingLabel"
         android:layout_width="144dp"
         android:layout_height="29dp"
         android:layout_marginStart="24dp"
@@ -133,5 +133,5 @@
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton11" />
+        app:layout_constraintTop_toBottomOf="@+id/stillButton" />
 </androidx.constraintlayout.widget.ConstraintLayout>
