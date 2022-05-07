@@ -7,7 +7,7 @@
     android:background="#BABABA">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/albumArt"
         android:layout_width="280dp"
         android:layout_height="286dp"
         android:layout_marginStart="64dp"
@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/daftpunkart" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/nowPlayingLabel"
         android:layout_width="231dp"
         android:layout_height="47dp"
         android:layout_marginStart="64dp"
@@ -32,7 +32,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/songTitleLabel"
         android:layout_width="278dp"
         android:layout_height="48dp"
         android:layout_marginStart="64dp"
@@ -49,13 +49,13 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        app:layout_constraintTop_toBottomOf="@+id/albumArt">
 
         <requestFocus />
     </TextView>
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/artistLabel"
         android:layout_width="278dp"
         android:layout_height="48dp"
         android:layout_marginStart="64dp"
@@ -73,7 +73,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/albumArt" />
 
     <ImageButton
         android:id="@+id/playPause"
@@ -88,7 +88,7 @@
         app:srcCompat="@drawable/play" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/skipForwardButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="85dp"
@@ -100,7 +100,7 @@
         app:srcCompat="@drawable/goforward" />
 
     <ImageButton
-        android:id="@+id/imageButton9"
+        android:id="@+id/chromecastButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="135dp"
@@ -112,7 +112,7 @@
         app:srcCompat="@drawable/chromecast" />
 
     <ImageButton
-        android:id="@+id/imageButton7"
+        android:id="@+id/skipBackwardButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="85dp"
@@ -124,7 +124,7 @@
         app:srcCompat="@drawable/goback" />
 
     <ImageButton
-        android:id="@+id/imageButton8"
+        android:id="@+id/shuffleButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="135dp"
@@ -136,7 +136,7 @@
         app:srcCompat="@drawable/shuffle" />
 
     <SeekBar
-        android:id="@+id/seekBar2"
+        android:id="@+id/songTimeBar"
         style="@android:style/Widget.DeviceDefault.SeekBar"
         android:layout_width="275dp"
         android:layout_height="20dp"
