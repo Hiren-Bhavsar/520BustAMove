@@ -26,4 +26,8 @@
     <string name="vehicles">vehicles</string>
     <string name="person_cycling">person cycling</string>
     <string name="still">STILL</string>
+    <string name="shuffle">shuffle</string>
+    <string name="chromecast">chromecast</string>
+    <string name="tabs">tabs</string>
+    <string name="viewpage">page view</string>
 </resources>
